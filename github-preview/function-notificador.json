@@ -1,0 +1,63 @@
+{
+  "buildConfig": {
+    "automaticUpdatePolicy": {},
+    "build": "projects/549602029020/locations/us-central1/builds/d80a902f-b997-4456-adb3-e1c7a5838358",
+    "dockerRegistry": "ARTIFACT_REGISTRY",
+    "dockerRepository": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/repositories/gcf-artifacts",
+    "entryPoint": "notificador",
+    "runtime": "python311",
+    "serviceAccount": "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/549602029020-compute@developer.gserviceaccount.com",
+    "source": {
+      "storageSource": {
+        "bucket": "gcf-v2-sources-549602029020-us-central1",
+        "generation": "1776273475426546",
+        "object": "notificador-dev/function-source.zip"
+      }
+    },
+    "sourceProvenance": {
+      "resolvedStorageSource": {
+        "bucket": "gcf-v2-sources-549602029020-us-central1",
+        "generation": "1776273475426546",
+        "object": "notificador-dev/function-source.zip"
+      }
+    }
+  },
+  "createTime": "2026-04-15T17:17:56.049415748Z",
+  "environment": "GEN_2",
+  "eventTrigger": {
+    "eventType": "google.cloud.pubsub.topic.v1.messagePublished",
+    "pubsubTopic": "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev",
+    "retryPolicy": "RETRY_POLICY_RETRY",
+    "serviceAccountEmail": "sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+    "trigger": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/triggers/notificador-dev-739338",
+    "triggerRegion": "us-central1"
+  },
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "name": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/functions/notificador-dev",
+  "satisfiesPzi": true,
+  "serviceConfig": {
+    "allTrafficOnLatestRevision": true,
+    "availableCpu": "0.1666",
+    "availableMemory": "256M",
+    "environmentVariables": {
+      "GCP_PROJECT": "YOUR_GCP_PROJECT_ID",
+      "LOG_EXECUTION_ID": "true",
+      "NOTIFICATION_EMAIL": "YOUR_NOTIFICATION_EMAIL",
+      "SENDGRID_SECRET_ID": "sendgrid-api-key-dev"
+    },
+    "ingressSettings": "ALLOW_ALL",
+    "maxInstanceCount": 3,
+    "maxInstanceRequestConcurrency": 1,
+    "revision": "notificador-dev-00001-dab",
+    "service": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/services/notificador-dev",
+    "serviceAccountEmail": "sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+    "timeoutSeconds": 60,
+    "uri": "https://notificador-dev-3eotrhtfva-uc.a.run.app"
+  },
+  "state": "ACTIVE",
+  "updateTime": "2026-04-15T17:18:58.592638734Z",
+  "url": "https://us-central1-YOUR_GCP_PROJECT_ID.cloudfunctions.net/notificador-dev"
+}

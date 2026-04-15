@@ -1,0 +1,26 @@
+services:
+
+  terraform:
+    image: hashicorp/terraform:1.8
+    working_dir: /workspace/terraform/environments/dev
+    env_file: .env
+    environment:
+      - TF_VAR_project_id=${GCP_PROJECT}
+      - TF_VAR_sendgrid_api_key=${SENDGRID_API_KEY}
+      - TF_VAR_notification_email=${NOTIFICATION_EMAIL}
+      - GOOGLE_APPLICATION_CREDENTIALS=/root/.config/gcloud/application_default_credentials.json
+    volumes:
+      - .:/workspace
+      - ~/.config/gcloud:/root/.config/gcloud:ro
+    entrypoint: ["terraform"]
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-bigquery:1.8.latest
+    working_dir: /workspace/dbt
+    env_file: .env
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/root/.config/gcloud/application_default_credentials.json
+    volumes:
+      - .:/workspace
+      - ~/.config/gcloud:/root/.config/gcloud:ro
+    entrypoint: ["dbt"]

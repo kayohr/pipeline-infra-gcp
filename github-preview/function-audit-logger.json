@@ -1,0 +1,63 @@
+{
+  "buildConfig": {
+    "automaticUpdatePolicy": {},
+    "build": "projects/549602029020/locations/us-central1/builds/aed4f99e-bb6e-4d94-9bff-88ee06e7fdb3",
+    "dockerRegistry": "ARTIFACT_REGISTRY",
+    "dockerRepository": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/repositories/gcf-artifacts",
+    "entryPoint": "audit_logger",
+    "runtime": "python311",
+    "serviceAccount": "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/549602029020-compute@developer.gserviceaccount.com",
+    "source": {
+      "storageSource": {
+        "bucket": "gcf-v2-sources-549602029020-us-central1",
+        "generation": "1776273475433594",
+        "object": "audit-logger-dev/function-source.zip"
+      }
+    },
+    "sourceProvenance": {
+      "resolvedStorageSource": {
+        "bucket": "gcf-v2-sources-549602029020-us-central1",
+        "generation": "1776273475433594",
+        "object": "audit-logger-dev/function-source.zip"
+      }
+    }
+  },
+  "createTime": "2026-04-15T17:17:56.149082052Z",
+  "environment": "GEN_2",
+  "eventTrigger": {
+    "eventType": "google.cloud.pubsub.topic.v1.messagePublished",
+    "pubsubTopic": "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev",
+    "retryPolicy": "RETRY_POLICY_RETRY",
+    "serviceAccountEmail": "sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+    "trigger": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/triggers/audit-logger-dev-553043",
+    "triggerRegion": "us-central1"
+  },
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "name": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/functions/audit-logger-dev",
+  "satisfiesPzi": true,
+  "serviceConfig": {
+    "allTrafficOnLatestRevision": true,
+    "availableCpu": "0.1666",
+    "availableMemory": "256M",
+    "environmentVariables": {
+      "BQ_DATASET_RAW": "raw_dev",
+      "BQ_TABLE_AUDIT_LOG": "pipeline_audit_log",
+      "GCP_PROJECT": "YOUR_GCP_PROJECT_ID",
+      "LOG_EXECUTION_ID": "true"
+    },
+    "ingressSettings": "ALLOW_ALL",
+    "maxInstanceCount": 3,
+    "maxInstanceRequestConcurrency": 1,
+    "revision": "audit-logger-dev-00001-yaw",
+    "service": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/services/audit-logger-dev",
+    "serviceAccountEmail": "sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+    "timeoutSeconds": 60,
+    "uri": "https://audit-logger-dev-3eotrhtfva-uc.a.run.app"
+  },
+  "state": "ACTIVE",
+  "updateTime": "2026-04-15T17:18:55.477218323Z",
+  "url": "https://us-central1-YOUR_GCP_PROJECT_ID.cloudfunctions.net/audit-logger-dev"
+}

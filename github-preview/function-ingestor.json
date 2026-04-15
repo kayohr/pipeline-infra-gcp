@@ -1,0 +1,56 @@
+{
+  "buildConfig": {
+    "automaticUpdatePolicy": {},
+    "build": "projects/549602029020/locations/us-central1/builds/a9b78171-2532-4e17-9746-202e19f0ff22",
+    "dockerRegistry": "ARTIFACT_REGISTRY",
+    "dockerRepository": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/repositories/gcf-artifacts",
+    "entryPoint": "ingestor",
+    "runtime": "python311",
+    "serviceAccount": "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/549602029020-compute@developer.gserviceaccount.com",
+    "source": {
+      "storageSource": {
+        "bucket": "gcf-v2-sources-549602029020-us-central1",
+        "generation": "1776274611562436",
+        "object": "ingestor-dev/function-source.zip"
+      }
+    },
+    "sourceProvenance": {
+      "resolvedStorageSource": {
+        "bucket": "gcf-v2-sources-549602029020-us-central1",
+        "generation": "1776274611562436",
+        "object": "ingestor-dev/function-source.zip"
+      }
+    }
+  },
+  "createTime": "2026-04-15T17:36:51.803541241Z",
+  "environment": "GEN_2",
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "name": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/functions/ingestor-dev",
+  "satisfiesPzi": true,
+  "serviceConfig": {
+    "allTrafficOnLatestRevision": true,
+    "availableCpu": "0.1666",
+    "availableMemory": "256M",
+    "environmentVariables": {
+      "BQ_DATASET_RAW": "raw_dev",
+      "BQ_TABLE_CLIMA_RAW": "clima_raw",
+      "GCP_PROJECT": "YOUR_GCP_PROJECT_ID",
+      "LOG_EXECUTION_ID": "true",
+      "PUBSUB_TOPIC": "pipeline-eventos-dev"
+    },
+    "ingressSettings": "ALLOW_ALL",
+    "maxInstanceCount": 3,
+    "maxInstanceRequestConcurrency": 1,
+    "revision": "ingestor-dev-00001-pol",
+    "service": "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/services/ingestor-dev",
+    "serviceAccountEmail": "sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+    "timeoutSeconds": 120,
+    "uri": "https://ingestor-dev-3eotrhtfva-uc.a.run.app"
+  },
+  "state": "ACTIVE",
+  "updateTime": "2026-04-15T17:37:39.895186436Z",
+  "url": "https://us-central1-YOUR_GCP_PROJECT_ID.cloudfunctions.net/ingestor-dev"
+}

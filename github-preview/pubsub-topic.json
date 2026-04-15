@@ -1,0 +1,7 @@
+{
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "name": "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev"
+}

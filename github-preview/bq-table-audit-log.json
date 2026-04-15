@@ -1,0 +1,77 @@
+{
+  "creationTime": "1776275062424",
+  "description": "Registro de execu\u00e7\u00f5es bem-sucedidas do pipeline",
+  "etag": "tbTrxqaNtkBm13FYo/CFkQ==",
+  "id": "YOUR_GCP_PROJECT_ID:raw_dev.pipeline_audit_log",
+  "kind": "bigquery#table",
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "lastModifiedTime": "1776275062475",
+  "location": "us-central1",
+  "numActiveLogicalBytes": "0",
+  "numBytes": "0",
+  "numLongTermBytes": "0",
+  "numLongTermLogicalBytes": "0",
+  "numRows": "0",
+  "numTotalLogicalBytes": "0",
+  "partitionDefinition": {
+    "partitionedColumn": [
+      {
+        "field": "event_timestamp"
+      }
+    ]
+  },
+  "schema": {
+    "fields": [
+      {
+        "description": "UUID do evento",
+        "mode": "REQUIRED",
+        "name": "event_id",
+        "type": "STRING"
+      },
+      {
+        "description": "Servi\u00e7o que gerou o evento",
+        "mode": "REQUIRED",
+        "name": "service",
+        "type": "STRING"
+      },
+      {
+        "description": "Status: sucesso ou erro",
+        "mode": "REQUIRED",
+        "name": "status",
+        "type": "STRING"
+      },
+      {
+        "description": "Mensagem de log",
+        "mode": "NULLABLE",
+        "name": "message",
+        "type": "STRING"
+      },
+      {
+        "description": "Timestamp do evento",
+        "mode": "REQUIRED",
+        "name": "event_timestamp",
+        "type": "TIMESTAMP"
+      },
+      {
+        "description": "Metadados adicionais em JSON",
+        "mode": "NULLABLE",
+        "name": "metadata",
+        "type": "JSON"
+      }
+    ]
+  },
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev/tables/pipeline_audit_log",
+  "tableReference": {
+    "datasetId": "raw_dev",
+    "projectId": "YOUR_GCP_PROJECT_ID",
+    "tableId": "pipeline_audit_log"
+  },
+  "timePartitioning": {
+    "field": "event_timestamp",
+    "type": "DAY"
+  },
+  "type": "TABLE"
+}

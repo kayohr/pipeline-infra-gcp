@@ -1,0 +1,39 @@
+{
+  "access": [
+    {
+      "role": "WRITER",
+      "specialGroup": "projectWriters"
+    },
+    {
+      "role": "OWNER",
+      "specialGroup": "projectOwners"
+    },
+    {
+      "role": "OWNER",
+      "userByEmail": "YOUR_GCP_ACCOUNT@gmail.com"
+    },
+    {
+      "role": "READER",
+      "specialGroup": "projectReaders"
+    }
+  ],
+  "creationTime": "1776274952628",
+  "datasetReference": {
+    "datasetId": "staging_dev",
+    "projectId": "YOUR_GCP_PROJECT_ID"
+  },
+  "description": "Views dbt de limpeza e padroniza\u00e7\u00e3o",
+  "etag": "KqrRGUacdtXFrFrUaP23Ww==",
+  "friendlyName": "Staging (dev)",
+  "id": "YOUR_GCP_PROJECT_ID:staging_dev",
+  "kind": "bigquery#dataset",
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "lastModifiedTime": "1776275061510",
+  "location": "us-central1",
+  "maxTimeTravelHours": "168",
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/staging_dev",
+  "type": "DEFAULT"
+}

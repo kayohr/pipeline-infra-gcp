@@ -1,0 +1,78 @@
+{
+  "apiVersion": "run.googleapis.com/v1",
+  "kind": "Job",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/creator": "YOUR_GCP_ACCOUNT@gmail.com",
+      "run.googleapis.com/lastModifier": "YOUR_GCP_ACCOUNT@gmail.com",
+      "run.googleapis.com/operation-id": "f81994d9-6c49-47aa-87a3-df8d51bc0b01"
+    },
+    "creationTimestamp": "2026-04-15T17:16:17.628729Z",
+    "generation": 1,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1",
+      "environment": "dev",
+      "managed_by": "terraform",
+      "run.googleapis.com/lastUpdatedTime": "2026-04-15T17:16:17.628729Z"
+    },
+    "name": "dbt-runner-dev",
+    "namespace": "549602029020",
+    "resourceVersion": "AAZPgt+1iR8",
+    "selfLink": "/apis/run.googleapis.com/v1/namespaces/549602029020/jobs/dbt-runner-dev",
+    "uid": "7f92555e-a5c0-4a96-a225-2728164b6eea"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "run.googleapis.com/execution-environment": "gen2"
+        }
+      },
+      "spec": {
+        "taskCount": 1,
+        "template": {
+          "spec": {
+            "containers": [
+              {
+                "env": [
+                  {
+                    "name": "GCP_PROJECT",
+                    "value": "YOUR_GCP_PROJECT_ID"
+                  },
+                  {
+                    "name": "ENVIRONMENT",
+                    "value": "dev"
+                  },
+                  {
+                    "name": "PUBSUB_TOPIC",
+                    "value": "pipeline-eventos-dev"
+                  }
+                ],
+                "image": "gcr.io/YOUR_GCP_PROJECT_ID/dbt-runner:latest",
+                "resources": {
+                  "limits": {
+                    "cpu": "1",
+                    "memory": "1Gi"
+                  }
+                }
+              }
+            ],
+            "maxRetries": 1,
+            "serviceAccountName": "sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+            "timeoutSeconds": "1800"
+          }
+        }
+      }
+    }
+  },
+  "status": {
+    "conditions": [
+      {
+        "lastTransitionTime": "2026-04-15T17:16:17.823007Z",
+        "status": "True",
+        "type": "Ready"
+      }
+    ],
+    "observedGeneration": 1
+  }
+}

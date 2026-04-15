@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: raw
+    database: "{{ env_var('GCP_PROJECT') }}"
+    schema: "raw_{{ env_var('ENVIRONMENT', 'dev') }}"
+    tables:
+      - name: clima_raw
+        description: "Dados climáticos horários brutos do Open-Meteo"
+        columns:
+          - name: cidade
+            description: "Nome da cidade"
+            tests:
+              - not_null
+              - accepted_values:
+                  values: ["São Paulo", "Rio de Janeiro", "Curitiba"]
+          - name: timestamp_utc
+            description: "Timestamp da medição (UTC)"
+            tests:
+              - not_null
+          - name: temperatura_c
+            description: "Temperatura em Celsius"
+          - name: umidade_pct
+            description: "Umidade relativa (%)"
+          - name: precipitacao_mm
+            description: "Precipitação (mm)"
+          - name: vento_kmh
+            description: "Velocidade do vento (km/h)"
+          - name: ingest_timestamp
+            description: "Timestamp de ingestão"
+            tests:
+              - not_null

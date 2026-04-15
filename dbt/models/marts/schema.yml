@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: mart_clima_diario
+    description: "Agregações diárias de clima por cidade (incremental)"
+    columns:
+      - name: cidade
+        description: "Nome da cidade"
+        tests:
+          - not_null
+      - name: data_medicao
+        description: "Data da medição"
+        tests:
+          - not_null
+      - name: temperatura_media_c
+        description: "Temperatura média do dia em Celsius"
+        tests:
+          - not_null
+      - name: precipitacao_total_mm
+        description: "Precipitação total acumulada no dia (mm)"
+        tests:
+          - not_null
+      - name: qtd_medicoes
+        description: "Quantidade de medições horárias no dia"
+        tests:
+          - not_null

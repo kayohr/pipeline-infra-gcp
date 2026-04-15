@@ -1,0 +1,105 @@
+{
+  "clustering": {
+    "fields": [
+      "cidade"
+    ]
+  },
+  "creationTime": "1776275062402",
+  "description": "Dados clim\u00e1ticos hor\u00e1rios brutos do Open-Meteo",
+  "etag": "p460NcW4w+TCPQKVlc2QgQ==",
+  "id": "YOUR_GCP_PROJECT_ID:raw_dev.clima_raw",
+  "kind": "bigquery#table",
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "lastModifiedTime": "1776275062453",
+  "location": "us-central1",
+  "numActiveLogicalBytes": "0",
+  "numBytes": "0",
+  "numLongTermBytes": "0",
+  "numLongTermLogicalBytes": "0",
+  "numRows": "0",
+  "numTotalLogicalBytes": "0",
+  "partitionDefinition": {
+    "partitionedColumn": [
+      {
+        "field": "ingest_timestamp"
+      }
+    ]
+  },
+  "schema": {
+    "fields": [
+      {
+        "description": "Nome da cidade",
+        "mode": "REQUIRED",
+        "name": "cidade",
+        "type": "STRING"
+      },
+      {
+        "description": "Latitude da cidade",
+        "mode": "NULLABLE",
+        "name": "latitude",
+        "type": "FLOAT"
+      },
+      {
+        "description": "Longitude da cidade",
+        "mode": "NULLABLE",
+        "name": "longitude",
+        "type": "FLOAT"
+      },
+      {
+        "description": "Timestamp da medi\u00e7\u00e3o (UTC)",
+        "mode": "REQUIRED",
+        "name": "timestamp_utc",
+        "type": "TIMESTAMP"
+      },
+      {
+        "description": "Temperatura em Celsius",
+        "mode": "NULLABLE",
+        "name": "temperatura_c",
+        "type": "FLOAT"
+      },
+      {
+        "description": "Umidade relativa (%)",
+        "mode": "NULLABLE",
+        "name": "umidade_pct",
+        "type": "INTEGER"
+      },
+      {
+        "description": "Precipita\u00e7\u00e3o (mm)",
+        "mode": "NULLABLE",
+        "name": "precipitacao_mm",
+        "type": "FLOAT"
+      },
+      {
+        "description": "Velocidade do vento (km/h)",
+        "mode": "NULLABLE",
+        "name": "vento_kmh",
+        "type": "FLOAT"
+      },
+      {
+        "description": "Timestamp de ingest\u00e3o no BigQuery",
+        "mode": "REQUIRED",
+        "name": "ingest_timestamp",
+        "type": "TIMESTAMP"
+      }
+    ]
+  },
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev/tables/clima_raw",
+  "streamingBuffer": {
+    "estimatedBytes": "10047",
+    "estimatedRows": "72",
+    "oldestEntryTime": "1776275075865"
+  },
+  "tableReference": {
+    "datasetId": "raw_dev",
+    "projectId": "YOUR_GCP_PROJECT_ID",
+    "tableId": "clima_raw"
+  },
+  "timePartitioning": {
+    "field": "ingest_timestamp",
+    "type": "DAY"
+  },
+  "type": "TABLE"
+}

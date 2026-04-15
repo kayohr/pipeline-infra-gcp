@@ -1,0 +1,1198 @@
+# module.bigquery.google_bigquery_dataset.marts:
+resource "google_bigquery_dataset" "marts" {
+    creation_time                   = 1776274952728
+    dataset_id                      = "marts_dev"
+    default_collation               = null
+    default_partition_expiration_ms = 0
+    default_table_expiration_ms     = 0
+    delete_contents_on_destroy      = true
+    description                     = "Tabelas analíticas finais (dbt incremental)"
+    effective_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    etag                            = "mDoQiTKP1wL+YVbKHqDY1g=="
+    friendly_name                   = "Marts (dev)"
+    id                              = "projects/YOUR_GCP_PROJECT_ID/datasets/marts_dev"
+    is_case_insensitive             = false
+    labels                          = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    last_modified_time              = 1776275061514
+    location                        = "us-central1"
+    max_time_travel_hours           = "168"
+    project                         = "YOUR_GCP_PROJECT_ID"
+    resource_tags                   = {}
+    self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/marts_dev"
+    storage_billing_model           = null
+    terraform_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "OWNER"
+        special_group  = null
+        user_by_email  = "YOUR_GCP_ACCOUNT@gmail.com"
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "OWNER"
+        special_group  = "projectOwners"
+        user_by_email  = null
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "READER"
+        special_group  = "projectReaders"
+        user_by_email  = null
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "WRITER"
+        special_group  = "projectWriters"
+        user_by_email  = null
+    }
+}
+
+# module.bigquery.google_bigquery_dataset.raw:
+resource "google_bigquery_dataset" "raw" {
+    creation_time                   = 1776274952735
+    dataset_id                      = "raw_dev"
+    default_collation               = null
+    default_partition_expiration_ms = 0
+    default_table_expiration_ms     = 0
+    delete_contents_on_destroy      = true
+    description                     = "Dados brutos ingeridos diretamente das fontes"
+    effective_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    etag                            = "wxMn/a+9apyd2MevRB+G4w=="
+    friendly_name                   = "Raw (dev)"
+    id                              = "projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev"
+    is_case_insensitive             = false
+    labels                          = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    last_modified_time              = 1776275061410
+    location                        = "us-central1"
+    max_time_travel_hours           = "168"
+    project                         = "YOUR_GCP_PROJECT_ID"
+    resource_tags                   = {}
+    self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev"
+    storage_billing_model           = null
+    terraform_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "OWNER"
+        special_group  = null
+        user_by_email  = "YOUR_GCP_ACCOUNT@gmail.com"
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "OWNER"
+        special_group  = "projectOwners"
+        user_by_email  = null
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "READER"
+        special_group  = "projectReaders"
+        user_by_email  = null
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "WRITER"
+        special_group  = "projectWriters"
+        user_by_email  = null
+    }
+}
+
+# module.bigquery.google_bigquery_dataset.staging:
+resource "google_bigquery_dataset" "staging" {
+    creation_time                   = 1776274952628
+    dataset_id                      = "staging_dev"
+    default_collation               = null
+    default_partition_expiration_ms = 0
+    default_table_expiration_ms     = 0
+    delete_contents_on_destroy      = true
+    description                     = "Views dbt de limpeza e padronização"
+    effective_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    etag                            = "KqrRGUacdtXFrFrUaP23Ww=="
+    friendly_name                   = "Staging (dev)"
+    id                              = "projects/YOUR_GCP_PROJECT_ID/datasets/staging_dev"
+    is_case_insensitive             = false
+    labels                          = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    last_modified_time              = 1776275061510
+    location                        = "us-central1"
+    max_time_travel_hours           = "168"
+    project                         = "YOUR_GCP_PROJECT_ID"
+    resource_tags                   = {}
+    self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/staging_dev"
+    storage_billing_model           = null
+    terraform_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "OWNER"
+        special_group  = null
+        user_by_email  = "YOUR_GCP_ACCOUNT@gmail.com"
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "OWNER"
+        special_group  = "projectOwners"
+        user_by_email  = null
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "READER"
+        special_group  = "projectReaders"
+        user_by_email  = null
+    }
+    access {
+        domain         = null
+        group_by_email = null
+        iam_member     = null
+        role           = "WRITER"
+        special_group  = "projectWriters"
+        user_by_email  = null
+    }
+}
+
+# module.bigquery.google_bigquery_table.clima_raw:
+resource "google_bigquery_table" "clima_raw" {
+    allow_resource_tags_on_deletion = false
+    clustering                      = [
+        "cidade",
+    ]
+    creation_time                   = 1776275062402
+    dataset_id                      = "raw_dev"
+    deletion_protection             = false
+    description                     = "Dados climáticos horários brutos do Open-Meteo"
+    effective_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    etag                            = "p460NcW4w+TCPQKVlc2QgQ=="
+    expiration_time                 = 0
+    friendly_name                   = null
+    id                              = "projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev/tables/clima_raw"
+    labels                          = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    last_modified_time              = 1776275062453
+    location                        = "us-central1"
+    max_staleness                   = null
+    num_bytes                       = 0
+    num_long_term_bytes             = 0
+    num_rows                        = 0
+    project                         = "YOUR_GCP_PROJECT_ID"
+    require_partition_filter        = false
+    schema                          = jsonencode(
+        [
+            {
+                description = "Nome da cidade"
+                mode        = "REQUIRED"
+                name        = "cidade"
+                type        = "STRING"
+            },
+            {
+                description = "Latitude da cidade"
+                mode        = "NULLABLE"
+                name        = "latitude"
+                type        = "FLOAT"
+            },
+            {
+                description = "Longitude da cidade"
+                mode        = "NULLABLE"
+                name        = "longitude"
+                type        = "FLOAT"
+            },
+            {
+                description = "Timestamp da medição (UTC)"
+                mode        = "REQUIRED"
+                name        = "timestamp_utc"
+                type        = "TIMESTAMP"
+            },
+            {
+                description = "Temperatura em Celsius"
+                mode        = "NULLABLE"
+                name        = "temperatura_c"
+                type        = "FLOAT"
+            },
+            {
+                description = "Umidade relativa (%)"
+                mode        = "NULLABLE"
+                name        = "umidade_pct"
+                type        = "INTEGER"
+            },
+            {
+                description = "Precipitação (mm)"
+                mode        = "NULLABLE"
+                name        = "precipitacao_mm"
+                type        = "FLOAT"
+            },
+            {
+                description = "Velocidade do vento (km/h)"
+                mode        = "NULLABLE"
+                name        = "vento_kmh"
+                type        = "FLOAT"
+            },
+            {
+                description = "Timestamp de ingestão no BigQuery"
+                mode        = "REQUIRED"
+                name        = "ingest_timestamp"
+                type        = "TIMESTAMP"
+            },
+        ]
+    )
+    self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev/tables/clima_raw"
+    table_id                        = "clima_raw"
+    terraform_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    type                            = "TABLE"
+
+    time_partitioning {
+        expiration_ms            = 0
+        field                    = "ingest_timestamp"
+        require_partition_filter = false
+        type                     = "DAY"
+    }
+}
+
+# module.bigquery.google_bigquery_table.pipeline_audit_log:
+resource "google_bigquery_table" "pipeline_audit_log" {
+    allow_resource_tags_on_deletion = false
+    creation_time                   = 1776275062424
+    dataset_id                      = "raw_dev"
+    deletion_protection             = false
+    description                     = "Registro de execuções bem-sucedidas do pipeline"
+    effective_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    etag                            = "tbTrxqaNtkBm13FYo/CFkQ=="
+    expiration_time                 = 0
+    friendly_name                   = null
+    id                              = "projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev/tables/pipeline_audit_log"
+    labels                          = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    last_modified_time              = 1776275062475
+    location                        = "us-central1"
+    max_staleness                   = null
+    num_bytes                       = 0
+    num_long_term_bytes             = 0
+    num_rows                        = 0
+    project                         = "YOUR_GCP_PROJECT_ID"
+    require_partition_filter        = false
+    schema                          = jsonencode(
+        [
+            {
+                description = "UUID do evento"
+                mode        = "REQUIRED"
+                name        = "event_id"
+                type        = "STRING"
+            },
+            {
+                description = "Serviço que gerou o evento"
+                mode        = "REQUIRED"
+                name        = "service"
+                type        = "STRING"
+            },
+            {
+                description = "Status: sucesso ou erro"
+                mode        = "REQUIRED"
+                name        = "status"
+                type        = "STRING"
+            },
+            {
+                description = "Mensagem de log"
+                mode        = "NULLABLE"
+                name        = "message"
+                type        = "STRING"
+            },
+            {
+                description = "Timestamp do evento"
+                mode        = "REQUIRED"
+                name        = "event_timestamp"
+                type        = "TIMESTAMP"
+            },
+            {
+                description = "Metadados adicionais em JSON"
+                mode        = "NULLABLE"
+                name        = "metadata"
+                type        = "JSON"
+            },
+        ]
+    )
+    self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev/tables/pipeline_audit_log"
+    table_id                        = "pipeline_audit_log"
+    terraform_labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    type                            = "TABLE"
+
+    time_partitioning {
+        expiration_ms            = 0
+        field                    = "event_timestamp"
+        require_partition_filter = false
+        type                     = "DAY"
+    }
+}
+# module.cloud_functions.data.archive_file.audit_logger_zip:
+data "archive_file" "audit_logger_zip" {
+    id                  = "8a070f3689a0011f9ac9881d562a91d6cb46e09b"
+    output_base64sha256 = "H0yZ78W6Gw1CrRrZQaOylhB8n/cFaCcGiDVg3mrHFsI="
+    output_base64sha512 = "thCn5siqYXe77rO8y9N9qSJT5D+jApeunB1S/4D5bhDpmvK1b6DzPFnDX/1xsKn1lYtzcVjVZ6K2k+wY9Oz06Q=="
+    output_md5          = "948fd767967c9261b9e59387883925a4"
+    output_path         = "/tmp/audit-logger-dev.zip"
+    output_sha          = "8a070f3689a0011f9ac9881d562a91d6cb46e09b"
+    output_sha256       = "1f4c99efc5ba1b0d42ad1ad941a3b296107c9ff705682706883560de6ac716c2"
+    output_sha512       = "b610a7e6c8aa6177bbeeb3bccbd37da92253e43fa30297ae9c1d52ff80f96e10e99af2b56fa0f33c59c35ffd71b0a9f5958b737158d567a2b693ec18f4ecf4e9"
+    output_size         = 932
+    source_dir          = "./../../../functions/audit_logger"
+    type                = "zip"
+}
+
+# module.cloud_functions.data.archive_file.ingestor_zip:
+data "archive_file" "ingestor_zip" {
+    id                  = "4dfca70b8e2da6c4c86bf881360eaaf288e295e6"
+    output_base64sha256 = "Y0RRlzaULttMuN8PLU8fp3tkcyRRLFt0fIiySIMKuz8="
+    output_base64sha512 = "TLFcFhkUZKiwJIUYO9STTwwZcJN/QU3v8PQLe1b4UC2MICjGPe691Nu4oBXz2s/sIX8ep1XCtUi23ZfYP2Q1ww=="
+    output_md5          = "a08ee1a6cedbe9d9008d1cd9501625ae"
+    output_path         = "/tmp/ingestor-dev.zip"
+    output_sha          = "4dfca70b8e2da6c4c86bf881360eaaf288e295e6"
+    output_sha256       = "6344519736942edb4cb8df0f2d4f1fa77b647324512c5b747c88b248830abb3f"
+    output_sha512       = "4cb15c16191464a8b02485183bd4934f0c1970937f414deff0f40b7b56f8502d8c2028c63deebdd4dbb8a015f3dacfec217f1ea755c2b548b6dd97d83f6435c3"
+    output_size         = 1635
+    source_dir          = "./../../../functions/ingestor"
+    type                = "zip"
+}
+
+# module.cloud_functions.data.archive_file.notificador_zip:
+data "archive_file" "notificador_zip" {
+    id                  = "dfb6fc779ce08a0aabba40c4581c7f23f0ecea06"
+    output_base64sha256 = "kr48BTQrzTyzpV1qQQetGvDzWPOs9gIIakWxcJrLh+Q="
+    output_base64sha512 = "tlSBo6UKzvA9trGVwMPzgZmn2Sjz6TUn6spm8DthyslVPcnDZvB8rOQIrvFF+TqwiOmSnvPqS3DHG3FGFYUHXA=="
+    output_md5          = "5c18b31435acb10f9f7e376fbefa2bde"
+    output_path         = "/tmp/notificador-dev.zip"
+    output_sha          = "dfb6fc779ce08a0aabba40c4581c7f23f0ecea06"
+    output_sha256       = "92be3c05342bcd3cb3a55d6a4107ad1af0f358f3acf602086a45b1709acb87e4"
+    output_sha512       = "b65481a3a50acef03db6b195c0c3f38199a7d928f3e93527eaca66f03b61cac9553dc9c366f07cace408aef145f93ab088e9929ef3ea4b70c71b71461585075c"
+    output_size         = 1210
+    source_dir          = "./../../../functions/notificador"
+    type                = "zip"
+}
+
+# module.cloud_functions.google_cloudfunctions2_function.audit_logger:
+resource "google_cloudfunctions2_function" "audit_logger" {
+    description      = null
+    effective_labels = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    environment      = "GEN_2"
+    id               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/functions/audit-logger-dev"
+    kms_key_name     = null
+    labels           = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    location         = "us-central1"
+    name             = "audit-logger-dev"
+    project          = "YOUR_GCP_PROJECT_ID"
+    state            = "ACTIVE"
+    terraform_labels = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    update_time      = "2026-04-15T17:18:55.477218323Z"
+    url              = "https://us-central1-YOUR_GCP_PROJECT_ID.cloudfunctions.net/audit-logger-dev"
+
+    build_config {
+        build                 = "projects/549602029020/locations/us-central1/builds/aed4f99e-bb6e-4d94-9bff-88ee06e7fdb3"
+        docker_repository     = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/repositories/gcf-artifacts"
+        entry_point           = "audit_logger"
+        environment_variables = {}
+        runtime               = "python311"
+        service_account       = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/549602029020-compute@developer.gserviceaccount.com"
+        worker_pool           = null
+
+        automatic_update_policy {}
+
+        source {
+            storage_source {
+                bucket     = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+                generation = 1776273475433594
+                object     = "audit-logger-948fd767967c9261b9e59387883925a4.zip"
+            }
+        }
+    }
+
+    event_trigger {
+        event_type            = "google.cloud.pubsub.topic.v1.messagePublished"
+        pubsub_topic          = "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev"
+        retry_policy          = "RETRY_POLICY_RETRY"
+        service_account_email = "sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        trigger               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/triggers/audit-logger-dev-553043"
+        trigger_region        = "us-central1"
+    }
+
+    service_config {
+        all_traffic_on_latest_revision   = true
+        available_cpu                    = "0.1666"
+        available_memory                 = "256M"
+        environment_variables            = {
+            "BQ_DATASET_RAW"     = "raw_dev"
+            "BQ_TABLE_AUDIT_LOG" = "pipeline_audit_log"
+            "GCP_PROJECT"        = "YOUR_GCP_PROJECT_ID"
+            "LOG_EXECUTION_ID"   = "true"
+        }
+        gcf_uri                          = null
+        ingress_settings                 = "ALLOW_ALL"
+        max_instance_count               = 3
+        max_instance_request_concurrency = 1
+        min_instance_count               = 0
+        service                          = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/services/audit-logger-dev"
+        service_account_email            = "sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        timeout_seconds                  = 60
+        uri                              = "https://audit-logger-dev-3eotrhtfva-uc.a.run.app"
+        vpc_connector                    = null
+        vpc_connector_egress_settings    = null
+    }
+}
+
+# module.cloud_functions.google_cloudfunctions2_function.ingestor:
+resource "google_cloudfunctions2_function" "ingestor" {
+    description      = null
+    effective_labels = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    environment      = "GEN_2"
+    id               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/functions/ingestor-dev"
+    kms_key_name     = null
+    labels           = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    location         = "us-central1"
+    name             = "ingestor-dev"
+    project          = "YOUR_GCP_PROJECT_ID"
+    state            = "ACTIVE"
+    terraform_labels = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    update_time      = "2026-04-15T17:37:39.895186436Z"
+    url              = "https://us-central1-YOUR_GCP_PROJECT_ID.cloudfunctions.net/ingestor-dev"
+
+    build_config {
+        build                 = "projects/549602029020/locations/us-central1/builds/a9b78171-2532-4e17-9746-202e19f0ff22"
+        docker_repository     = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/repositories/gcf-artifacts"
+        entry_point           = "ingestor"
+        environment_variables = {}
+        runtime               = "python311"
+        service_account       = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/549602029020-compute@developer.gserviceaccount.com"
+        worker_pool           = null
+
+        automatic_update_policy {}
+
+        source {
+            storage_source {
+                bucket     = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+                generation = 1776274611562436
+                object     = "ingestor-a08ee1a6cedbe9d9008d1cd9501625ae.zip"
+            }
+        }
+    }
+
+    service_config {
+        all_traffic_on_latest_revision   = true
+        available_cpu                    = "0.1666"
+        available_memory                 = "256M"
+        environment_variables            = {
+            "BQ_DATASET_RAW"     = "raw_dev"
+            "BQ_TABLE_CLIMA_RAW" = "clima_raw"
+            "GCP_PROJECT"        = "YOUR_GCP_PROJECT_ID"
+            "LOG_EXECUTION_ID"   = "true"
+            "PUBSUB_TOPIC"       = "pipeline-eventos-dev"
+        }
+        gcf_uri                          = null
+        ingress_settings                 = "ALLOW_ALL"
+        max_instance_count               = 3
+        max_instance_request_concurrency = 1
+        min_instance_count               = 0
+        service                          = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/services/ingestor-dev"
+        service_account_email            = "sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        timeout_seconds                  = 120
+        uri                              = "https://ingestor-dev-3eotrhtfva-uc.a.run.app"
+        vpc_connector                    = null
+        vpc_connector_egress_settings    = null
+    }
+}
+
+# module.cloud_functions.google_cloudfunctions2_function.notificador:
+resource "google_cloudfunctions2_function" "notificador" {
+    description      = null
+    effective_labels = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    environment      = "GEN_2"
+    id               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/functions/notificador-dev"
+    kms_key_name     = null
+    labels           = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    location         = "us-central1"
+    name             = "notificador-dev"
+    project          = "YOUR_GCP_PROJECT_ID"
+    state            = "ACTIVE"
+    terraform_labels = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    update_time      = "2026-04-15T17:18:58.592638734Z"
+    url              = "https://us-central1-YOUR_GCP_PROJECT_ID.cloudfunctions.net/notificador-dev"
+
+    build_config {
+        build                 = "projects/549602029020/locations/us-central1/builds/d80a902f-b997-4456-adb3-e1c7a5838358"
+        docker_repository     = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/repositories/gcf-artifacts"
+        entry_point           = "notificador"
+        environment_variables = {}
+        runtime               = "python311"
+        service_account       = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/549602029020-compute@developer.gserviceaccount.com"
+        worker_pool           = null
+
+        automatic_update_policy {}
+
+        source {
+            storage_source {
+                bucket     = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+                generation = 1776273475426546
+                object     = "notificador-5c18b31435acb10f9f7e376fbefa2bde.zip"
+            }
+        }
+    }
+
+    event_trigger {
+        event_type            = "google.cloud.pubsub.topic.v1.messagePublished"
+        pubsub_topic          = "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev"
+        retry_policy          = "RETRY_POLICY_RETRY"
+        service_account_email = "sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        trigger               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/triggers/notificador-dev-739338"
+        trigger_region        = "us-central1"
+    }
+
+    service_config {
+        all_traffic_on_latest_revision   = true
+        available_cpu                    = "0.1666"
+        available_memory                 = "256M"
+        environment_variables            = {
+            "GCP_PROJECT"        = "YOUR_GCP_PROJECT_ID"
+            "LOG_EXECUTION_ID"   = "true"
+            "NOTIFICATION_EMAIL" = "YOUR_NOTIFICATION_EMAIL"
+            "SENDGRID_SECRET_ID" = "sendgrid-api-key-dev"
+        }
+        gcf_uri                          = null
+        ingress_settings                 = "ALLOW_ALL"
+        max_instance_count               = 3
+        max_instance_request_concurrency = 1
+        min_instance_count               = 0
+        service                          = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/services/notificador-dev"
+        service_account_email            = "sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        timeout_seconds                  = 60
+        uri                              = "https://notificador-dev-3eotrhtfva-uc.a.run.app"
+        vpc_connector                    = null
+        vpc_connector_egress_settings    = null
+    }
+}
+
+# module.cloud_functions.google_storage_bucket.functions_source:
+resource "google_storage_bucket" "functions_source" {
+    default_event_based_hold    = false
+    effective_labels            = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    enable_object_retention     = false
+    force_destroy               = true
+    id                          = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+    labels                      = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    location                    = "US-CENTRAL1"
+    name                        = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+    project                     = "YOUR_GCP_PROJECT_ID"
+    project_number              = 549602029020
+    public_access_prevention    = "inherited"
+    requester_pays              = false
+    self_link                   = "https://www.googleapis.com/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev"
+    storage_class               = "STANDARD"
+    terraform_labels            = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    uniform_bucket_level_access = true
+    url                         = "gs://YOUR_GCP_PROJECT_ID-functions-src-dev"
+
+    soft_delete_policy {
+        effective_time             = "2026-04-15T17:09:46.344Z"
+        retention_duration_seconds = 604800
+    }
+}
+
+# module.cloud_functions.google_storage_bucket_object.audit_logger_source:
+resource "google_storage_bucket_object" "audit_logger_source" {
+    bucket              = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+    cache_control       = null
+    content_disposition = null
+    content_encoding    = null
+    content_language    = null
+    content_type        = "application/zip"
+    crc32c              = "dBlFrg=="
+    detect_md5hash      = "lI/XZ5Z8kmG55ZOHiDklpA=="
+    event_based_hold    = false
+    generation          = 1776273473309374
+    id                  = "YOUR_GCP_PROJECT_ID-functions-src-dev-audit-logger-948fd767967c9261b9e59387883925a4.zip"
+    kms_key_name        = null
+    md5hash             = "lI/XZ5Z8kmG55ZOHiDklpA=="
+    media_link          = "https://storage.googleapis.com/download/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev/o/audit-logger-948fd767967c9261b9e59387883925a4.zip?generation=1776273473309374&alt=media"
+    metadata            = {}
+    name                = "audit-logger-948fd767967c9261b9e59387883925a4.zip"
+    output_name         = "audit-logger-948fd767967c9261b9e59387883925a4.zip"
+    self_link           = "https://www.googleapis.com/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev/o/audit-logger-948fd767967c9261b9e59387883925a4.zip"
+    source              = "/tmp/audit-logger-dev.zip"
+    storage_class       = "STANDARD"
+    temporary_hold      = false
+}
+
+# module.cloud_functions.google_storage_bucket_object.ingestor_source:
+resource "google_storage_bucket_object" "ingestor_source" {
+    bucket              = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+    cache_control       = null
+    content_disposition = null
+    content_encoding    = null
+    content_language    = null
+    content_type        = "application/zip"
+    crc32c              = "4F7S5w=="
+    detect_md5hash      = "oI7hps7b6dkAjRzZUBYlrg=="
+    event_based_hold    = false
+    generation          = 1776272988280042
+    id                  = "YOUR_GCP_PROJECT_ID-functions-src-dev-ingestor-a08ee1a6cedbe9d9008d1cd9501625ae.zip"
+    kms_key_name        = null
+    md5hash             = "oI7hps7b6dkAjRzZUBYlrg=="
+    media_link          = "https://storage.googleapis.com/download/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev/o/ingestor-a08ee1a6cedbe9d9008d1cd9501625ae.zip?generation=1776272988280042&alt=media"
+    metadata            = {}
+    name                = "ingestor-a08ee1a6cedbe9d9008d1cd9501625ae.zip"
+    output_name         = "ingestor-a08ee1a6cedbe9d9008d1cd9501625ae.zip"
+    self_link           = "https://www.googleapis.com/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev/o/ingestor-a08ee1a6cedbe9d9008d1cd9501625ae.zip"
+    source              = "/tmp/ingestor-dev.zip"
+    storage_class       = "STANDARD"
+    temporary_hold      = false
+}
+
+# module.cloud_functions.google_storage_bucket_object.notificador_source:
+resource "google_storage_bucket_object" "notificador_source" {
+    bucket              = "YOUR_GCP_PROJECT_ID-functions-src-dev"
+    cache_control       = null
+    content_disposition = null
+    content_encoding    = null
+    content_language    = null
+    content_type        = "application/zip"
+    crc32c              = "Hx9lqA=="
+    detect_md5hash      = "XBizFDWssQ+ffjdvvvor3g=="
+    event_based_hold    = false
+    generation          = 1776273473553713
+    id                  = "YOUR_GCP_PROJECT_ID-functions-src-dev-notificador-5c18b31435acb10f9f7e376fbefa2bde.zip"
+    kms_key_name        = null
+    md5hash             = "XBizFDWssQ+ffjdvvvor3g=="
+    media_link          = "https://storage.googleapis.com/download/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev/o/notificador-5c18b31435acb10f9f7e376fbefa2bde.zip?generation=1776273473553713&alt=media"
+    metadata            = {}
+    name                = "notificador-5c18b31435acb10f9f7e376fbefa2bde.zip"
+    output_name         = "notificador-5c18b31435acb10f9f7e376fbefa2bde.zip"
+    self_link           = "https://www.googleapis.com/storage/v1/b/YOUR_GCP_PROJECT_ID-functions-src-dev/o/notificador-5c18b31435acb10f9f7e376fbefa2bde.zip"
+    source              = "/tmp/notificador-dev.zip"
+    storage_class       = "STANDARD"
+    temporary_hold      = false
+}
+# module.cloud_run.google_cloud_run_v2_job.dbt_runner:
+resource "google_cloud_run_v2_job" "dbt_runner" {
+    annotations              = {}
+    client                   = null
+    client_version           = null
+    conditions               = []
+    create_time              = "2026-04-15T17:16:17.628729Z"
+    creator                  = "YOUR_GCP_ACCOUNT@gmail.com"
+    delete_time              = null
+    effective_annotations    = {}
+    effective_labels         = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    etag                     = "\"COGP_84GEKjJ5qsC/cHJvamVjdHMvcHJvamVjdC0wOGM3MjkwNy1lNjkwLTRmNjYtODEyL2xvY2F0aW9ucy91cy1jZW50cmFsMS9qb2JzL2RidC1ydW5uZXItZGV2\""
+    execution_count          = 0
+    expire_time              = null
+    generation               = "1"
+    id                       = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/jobs/dbt-runner-dev"
+    labels                   = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    last_modifier            = "YOUR_GCP_ACCOUNT@gmail.com"
+    latest_created_execution = []
+    launch_stage             = "GA"
+    location                 = "us-central1"
+    name                     = "dbt-runner-dev"
+    observed_generation      = "1"
+    project                  = "YOUR_GCP_PROJECT_ID"
+    reconciling              = false
+    terminal_condition       = [
+        {
+            execution_reason     = null
+            last_transition_time = "2026-04-15T17:16:17.823007Z"
+            message              = null
+            reason               = null
+            revision_reason      = null
+            severity             = null
+            state                = "CONDITION_SUCCEEDED"
+            type                 = "Ready"
+        },
+    ]
+    terraform_labels         = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    uid                      = "7f92555e-a5c0-4a96-a225-2728164b6eea"
+    update_time              = "2026-04-15T17:16:17.628729Z"
+
+    template {
+        annotations = {}
+        labels      = {}
+        parallelism = 0
+        task_count  = 1
+
+        template {
+            encryption_key        = null
+            execution_environment = "EXECUTION_ENVIRONMENT_GEN2"
+            max_retries           = 1
+            service_account       = "sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+            timeout               = "1800s"
+
+            containers {
+                args        = []
+                command     = []
+                image       = "gcr.io/YOUR_GCP_PROJECT_ID/dbt-runner:latest"
+                name        = null
+                working_dir = null
+
+                env {
+                    name  = "GCP_PROJECT"
+                    value = "YOUR_GCP_PROJECT_ID"
+                }
+                env {
+                    name  = "ENVIRONMENT"
+                    value = "dev"
+                }
+                env {
+                    name  = "PUBSUB_TOPIC"
+                    value = "pipeline-eventos-dev"
+                }
+
+                resources {
+                    limits = {
+                        "cpu"    = "1"
+                        "memory" = "1Gi"
+                    }
+                }
+            }
+        }
+    }
+}
+# module.iam.google_project_iam_member.audit_logger_bq_editor:
+resource "google_project_iam_member" "audit_logger_bq_editor" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/bigquery.dataEditor/serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/bigquery.dataEditor"
+}
+
+# module.iam.google_project_iam_member.audit_logger_bq_job_user:
+resource "google_project_iam_member" "audit_logger_bq_job_user" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/bigquery.jobUser/serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/bigquery.jobUser"
+}
+
+# module.iam.google_project_iam_member.audit_logger_pubsub_subscriber:
+resource "google_project_iam_member" "audit_logger_pubsub_subscriber" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/pubsub.subscriber/serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/pubsub.subscriber"
+}
+
+# module.iam.google_project_iam_member.dbt_runner_bq_editor:
+resource "google_project_iam_member" "dbt_runner_bq_editor" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/bigquery.dataEditor/serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/bigquery.dataEditor"
+}
+
+# module.iam.google_project_iam_member.dbt_runner_bq_job_user:
+resource "google_project_iam_member" "dbt_runner_bq_job_user" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/bigquery.jobUser/serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/bigquery.jobUser"
+}
+
+# module.iam.google_project_iam_member.dbt_runner_pubsub_publisher:
+resource "google_project_iam_member" "dbt_runner_pubsub_publisher" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/pubsub.publisher/serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/pubsub.publisher"
+}
+
+# module.iam.google_project_iam_member.ingestor_bq_editor:
+resource "google_project_iam_member" "ingestor_bq_editor" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/bigquery.dataEditor/serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/bigquery.dataEditor"
+}
+
+# module.iam.google_project_iam_member.ingestor_bq_job_user:
+resource "google_project_iam_member" "ingestor_bq_job_user" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/bigquery.jobUser/serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/bigquery.jobUser"
+}
+
+# module.iam.google_project_iam_member.ingestor_pubsub_publisher:
+resource "google_project_iam_member" "ingestor_pubsub_publisher" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/pubsub.publisher/serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/pubsub.publisher"
+}
+
+# module.iam.google_project_iam_member.notificador_pubsub_subscriber:
+resource "google_project_iam_member" "notificador_pubsub_subscriber" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/pubsub.subscriber/serviceAccount:sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/pubsub.subscriber"
+}
+
+# module.iam.google_project_iam_member.notificador_secret_accessor:
+resource "google_project_iam_member" "notificador_secret_accessor" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/secretmanager.secretAccessor/serviceAccount:sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/secretmanager.secretAccessor"
+}
+
+# module.iam.google_service_account.audit_logger:
+resource "google_service_account" "audit_logger" {
+    account_id   = "sa-audit-logger-dev"
+    description  = null
+    disabled     = false
+    display_name = "SA - Cloud Function Audit Logger (dev)"
+    email        = "sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    id           = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member       = "serviceAccount:sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    name         = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-audit-logger-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project      = "YOUR_GCP_PROJECT_ID"
+    unique_id    = "109287151995893297628"
+}
+
+# module.iam.google_service_account.dbt_runner:
+resource "google_service_account" "dbt_runner" {
+    account_id   = "sa-dbt-runner-dev"
+    description  = null
+    disabled     = false
+    display_name = "SA - Cloud Run Job dbt Runner (dev)"
+    email        = "sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    id           = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member       = "serviceAccount:sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    name         = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-dbt-runner-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project      = "YOUR_GCP_PROJECT_ID"
+    unique_id    = "113329220147778744307"
+}
+
+# module.iam.google_service_account.ingestor:
+resource "google_service_account" "ingestor" {
+    account_id   = "sa-ingestor-dev"
+    description  = null
+    disabled     = false
+    display_name = "SA - Cloud Function Ingestor (dev)"
+    email        = "sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    id           = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member       = "serviceAccount:sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    name         = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-ingestor-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project      = "YOUR_GCP_PROJECT_ID"
+    unique_id    = "107985187935532504966"
+}
+
+# module.iam.google_service_account.notificador:
+resource "google_service_account" "notificador" {
+    account_id   = "sa-notificador-dev"
+    description  = null
+    disabled     = false
+    display_name = "SA - Cloud Function Notificador (dev)"
+    email        = "sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    id           = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member       = "serviceAccount:sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    name         = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-notificador-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project      = "YOUR_GCP_PROJECT_ID"
+    unique_id    = "115846101687696802327"
+}
+# module.pubsub.google_pubsub_subscription.dead_letter:
+resource "google_pubsub_subscription" "dead_letter" {
+    ack_deadline_seconds         = 60
+    effective_labels             = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    enable_exactly_once_delivery = false
+    enable_message_ordering      = false
+    filter                       = null
+    id                           = "projects/YOUR_GCP_PROJECT_ID/subscriptions/sub-pipeline-dead-letter-dev"
+    labels                       = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    message_retention_duration   = "604800s"
+    name                         = "sub-pipeline-dead-letter-dev"
+    project                      = "YOUR_GCP_PROJECT_ID"
+    retain_acked_messages        = false
+    terraform_labels             = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    topic                        = "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev"
+
+    expiration_policy {
+        ttl = "2678400s"
+    }
+}
+
+# module.pubsub.google_pubsub_topic.pipeline_eventos:
+resource "google_pubsub_topic" "pipeline_eventos" {
+    effective_labels           = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    id                         = "projects/YOUR_GCP_PROJECT_ID/topics/pipeline-eventos-dev"
+    kms_key_name               = null
+    labels                     = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    message_retention_duration = null
+    name                       = "pipeline-eventos-dev"
+    project                    = "YOUR_GCP_PROJECT_ID"
+    terraform_labels           = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+}
+# module.scheduler.google_cloud_scheduler_job.dbt_runner:
+resource "google_cloud_scheduler_job" "dbt_runner" {
+    attempt_deadline = "180s"
+    description      = null
+    id               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/jobs/scheduler-dbt-runner-dev"
+    name             = "scheduler-dbt-runner-dev"
+    paused           = false
+    project          = "YOUR_GCP_PROJECT_ID"
+    region           = "us-central1"
+    schedule         = "10 * * * *"
+    state            = "ENABLED"
+    time_zone        = "America/Sao_Paulo"
+
+    http_target {
+        body        = null
+        headers     = {}
+        http_method = "POST"
+        uri         = "https://us-central1-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/YOUR_GCP_PROJECT_ID/jobs/dbt-runner-dev:run"
+
+        oauth_token {
+            scope                 = "https://www.googleapis.com/auth/cloud-platform"
+            service_account_email = "sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        }
+    }
+
+    retry_config {
+        max_backoff_duration = "3600s"
+        max_doublings        = 5
+        max_retry_duration   = "0s"
+        min_backoff_duration = "5s"
+        retry_count          = 2
+    }
+}
+
+# module.scheduler.google_cloud_scheduler_job.ingestor_horario:
+resource "google_cloud_scheduler_job" "ingestor_horario" {
+    attempt_deadline = "180s"
+    description      = null
+    id               = "projects/YOUR_GCP_PROJECT_ID/locations/us-central1/jobs/scheduler-ingestor-dev"
+    name             = "scheduler-ingestor-dev"
+    paused           = false
+    project          = "YOUR_GCP_PROJECT_ID"
+    region           = "us-central1"
+    schedule         = "0 * * * *"
+    state            = "ENABLED"
+    time_zone        = "America/Sao_Paulo"
+
+    http_target {
+        body        = "e30="
+        headers     = {}
+        http_method = "POST"
+        uri         = "https://ingestor-dev-3eotrhtfva-uc.a.run.app/"
+
+        oidc_token {
+            audience              = "https://ingestor-dev-3eotrhtfva-uc.a.run.app"
+            service_account_email = "sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+        }
+    }
+
+    retry_config {
+        max_backoff_duration = "3600s"
+        max_doublings        = 5
+        max_retry_duration   = "0s"
+        min_backoff_duration = "5s"
+        retry_count          = 3
+    }
+}
+
+# module.scheduler.google_project_iam_member.scheduler_run_invoker:
+resource "google_project_iam_member" "scheduler_run_invoker" {
+    etag    = "BwZPgt+xx9Q="
+    id      = "YOUR_GCP_PROJECT_ID/roles/run.invoker/serviceAccount:sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member  = "serviceAccount:sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project = "YOUR_GCP_PROJECT_ID"
+    role    = "roles/run.invoker"
+}
+
+# module.scheduler.google_service_account.scheduler_invoker:
+resource "google_service_account" "scheduler_invoker" {
+    account_id   = "sa-scheduler-dev"
+    description  = null
+    disabled     = false
+    display_name = "SA - Cloud Scheduler Invoker (dev)"
+    email        = "sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    id           = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    member       = "serviceAccount:sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    name         = "projects/YOUR_GCP_PROJECT_ID/serviceAccounts/sa-scheduler-dev@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com"
+    project      = "YOUR_GCP_PROJECT_ID"
+    unique_id    = "114038172702636932654"
+}
+# module.secret_manager.google_secret_manager_secret.sendgrid_api_key:
+resource "google_secret_manager_secret" "sendgrid_api_key" {
+    annotations           = {}
+    create_time           = "2026-04-15T17:09:44.711814Z"
+    effective_annotations = {}
+    effective_labels      = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    expire_time           = null
+    id                    = "projects/YOUR_GCP_PROJECT_ID/secrets/sendgrid-api-key-dev"
+    labels                = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    name                  = "projects/549602029020/secrets/sendgrid-api-key-dev"
+    project               = "YOUR_GCP_PROJECT_ID"
+    secret_id             = "sendgrid-api-key-dev"
+    terraform_labels      = {
+        "environment" = "dev"
+        "managed_by"  = "terraform"
+    }
+    version_aliases       = {}
+    version_destroy_ttl   = null
+
+    replication {
+        auto {
+        }
+    }
+}
+
+# module.secret_manager.google_secret_manager_secret_version.sendgrid_api_key:
+resource "google_secret_manager_secret_version" "sendgrid_api_key" {
+    create_time           = "2026-04-15T17:09:47.839591Z"
+    deletion_policy       = "DELETE"
+    destroy_time          = null
+    enabled               = true
+    id                    = "projects/549602029020/secrets/sendgrid-api-key-dev/versions/1"
+    is_secret_data_base64 = false
+    name                  = "projects/549602029020/secrets/sendgrid-api-key-dev/versions/1"
+    secret                = "projects/YOUR_GCP_PROJECT_ID/secrets/sendgrid-api-key-dev"
+    secret_data           = (sensitive value)
+    version               = "1"
+}

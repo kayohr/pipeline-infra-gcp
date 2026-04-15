@@ -1,0 +1,39 @@
+{
+  "access": [
+    {
+      "role": "WRITER",
+      "specialGroup": "projectWriters"
+    },
+    {
+      "role": "OWNER",
+      "specialGroup": "projectOwners"
+    },
+    {
+      "role": "OWNER",
+      "userByEmail": "YOUR_GCP_ACCOUNT@gmail.com"
+    },
+    {
+      "role": "READER",
+      "specialGroup": "projectReaders"
+    }
+  ],
+  "creationTime": "1776274952735",
+  "datasetReference": {
+    "datasetId": "raw_dev",
+    "projectId": "YOUR_GCP_PROJECT_ID"
+  },
+  "description": "Dados brutos ingeridos diretamente das fontes",
+  "etag": "wxMn/a+9apyd2MevRB+G4w==",
+  "friendlyName": "Raw (dev)",
+  "id": "YOUR_GCP_PROJECT_ID:raw_dev",
+  "kind": "bigquery#dataset",
+  "labels": {
+    "environment": "dev",
+    "managed_by": "terraform"
+  },
+  "lastModifiedTime": "1776275061410",
+  "location": "us-central1",
+  "maxTimeTravelHours": "168",
+  "selfLink": "https://bigquery.googleapis.com/bigquery/v2/projects/YOUR_GCP_PROJECT_ID/datasets/raw_dev",
+  "type": "DEFAULT"
+}

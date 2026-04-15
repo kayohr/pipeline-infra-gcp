@@ -1,0 +1,40 @@
+# Terraform — estado e segredos
+**/.terraform/
+**/*.tfstate
+**/*.tfstate.backup
+**/.terraform.lock.hcl
+
+# tfvars: bloqueia todos, libera só os públicos e os exemplos
+**/*.tfvars
+!**/terraform.tfvars
+!**/*.tfvars.example
+
+# Segredos auto-carregados pelo Terraform — nunca versionar
+**/secret.auto.tfvars
+
+# Variáveis de ambiente locais
+.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# dbt
+dbt/target/
+dbt/dbt_packages/
+dbt/logs/
+
+# Credenciais GCP
+*.pem
+*.key
+
+# Snapshot local da nuvem — contém dados sensíveis, não versionar
+deployed-snapshot-dev/
+
+# Arquivos locais que não fazem sentido no repositório
+CLAUDE.MD
+dbt/.user.yml

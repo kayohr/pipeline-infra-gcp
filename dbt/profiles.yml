@@ -1,0 +1,21 @@
+clima_pipeline:
+  target: "{{ env_var('ENVIRONMENT', 'dev') }}"
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('GCP_PROJECT') }}"
+      dataset: raw_dev
+      location: us-central1
+      threads: 4
+      timeout_seconds: 300
+
+    prod:
+      type: bigquery
+      method: service-account-impersonation
+      project: "{{ env_var('GCP_PROJECT') }}"
+      dataset: raw_prod
+      location: us-central1
+      threads: 4
+      timeout_seconds: 300
+      impersonate_service_account: "{{ env_var('DBT_SA_EMAIL', '') }}"
