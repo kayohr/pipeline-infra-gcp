@@ -35,6 +35,3 @@ dbt/logs/
 # Snapshot local da nuvem — contém dados sensíveis, não versionar
 deployed-snapshot-dev/
 
-# Arquivos locais que não fazem sentido no repositório
-CLAUDE.MD
-dbt/.user.yml
