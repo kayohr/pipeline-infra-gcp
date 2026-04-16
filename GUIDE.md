@@ -461,7 +461,7 @@ NO GCP — EXECUÇÃO AUTOMÁTICA A CADA HORA
 DADOS DISPONÍVEIS PARA ANÁLISE
 ═══════════════════════════════════════════════════════
 
-BigQuery — projeto: project-08c72907-e690-4f66-812 — região: us-central1
+BigQuery — projeto: seu_projeto — região: us-central1
 
 raw_dev.clima_raw
   Dados brutos, 1 linha por hora por cidade
